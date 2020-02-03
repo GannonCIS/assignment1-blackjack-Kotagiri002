@@ -17,10 +17,12 @@ public class BlackJack {
     public static void main(String[] args) {
         // TODO code application logic here
         Deck myDeck = new Deck();
-        
-        for(int i = 0; i < 52; i++){
+        Hand myHand = new Hand();
+        for(int i = 0; i < 6; i++){
             Card temp = myDeck.dealCard();
-            System.out.println(temp.RANK + " of " + temp.SUIT);
+            myHand.addCard(temp);
+            System.out.println("numOfCards:" + myHand.getNumOfCards() + "  "
+            + "scores" + myHand.getScore());
         }
     }
     
