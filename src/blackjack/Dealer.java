@@ -10,5 +10,25 @@ package blackjack;
  * @author gubotdev
  */
 public class Dealer {
+    private int handValue = 0;
     
+    private int winner = 0;
+    
+    private Hand dealerHand = new Hand();
+    
+    public Card dealOpeningHands(){
+        return null;
+    }
+    public int takePlayerTurns(Deck deck){
+        return handValue;
+        
+    }
+    
+    public void playerOutDealerHand() {
+        
+    }
+    
+    public int declareWinner(){
+        return winner;
+    }
 }
