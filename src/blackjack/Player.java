@@ -10,7 +10,7 @@ package blackjack;
  * @author gubotdev
  */
 public class Player {
-    private Hand myhand = new Hand();
+    private Hand myHand = new Hand();
     private String name;
     
     public Player(String name) {
