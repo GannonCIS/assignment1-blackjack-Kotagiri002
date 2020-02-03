@@ -10,5 +10,20 @@ package blackjack;
  * @author gubotdev
  */
 public class Player {
+    private Hand myhand = new Hand();
+    private String name;
     
+    public Player(String name) {
+        this.name = name;
+    }
+    public Player(int playerNum){
+        name = "Player" + playerNum;
+    }
+    public Hand getMyHand() {
+        return myHand;
+    }
+    public String getMyName() {
+        return name;
+    }
+
 }
